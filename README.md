@@ -9,7 +9,7 @@ All commands test use the remote target ip of the iDRAC controller. Local comman
 
 ## Get Help
 ```
-docker run --rm -it docker-dell-omsa7:latest dell-omsa7 \
+docker run --rm -it tebruno99/docker-dell-omsa7:latest \
   /opt/dell/srvadmin/bin/idracadm7 \
   -r <remote ip> \
   -u <remote user> \
@@ -24,7 +24,7 @@ DOMAIN=example.com
 
 docker run --rm \
   -v /etc/letsencrypt:/etc/letsencrypt:z \
-  -it docker-dell-omsa7:latest omsa7 \
+  -it tebruno99/docker-dell-omsa7:latest \
   /opt/dell/srvadmin/bin/idracadm7 -r <remote ip> \
   -u <remote user> \
   -p "<remote password>" \
@@ -38,7 +38,7 @@ DOMAIN=example.com
 
 docker run --rm \
   -v /etc/letsencrypt:/etc/letsencrypt:z \
-  -it docker-dell-omsa7:latest omsa7 \
+  -it tebruno99/docker-dell-omsa7:latest \
   /opt/dell/srvadmin/bin/idracadm7 -r <remote ip> \
   -u <remote user> \
   -p "<remote password>" \
